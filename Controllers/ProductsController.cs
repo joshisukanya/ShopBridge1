@@ -10,10 +10,6 @@ namespace ShopBridge.Controllers
 {
     public class ProductsController : Controller
     {
-        //public async Task<ActionResult> Index()
-        //{
-        //    return View(await "");
-        //}
         ProductDAL objcontact = new ProductDAL();
 
         // GET: Contact
@@ -28,18 +24,5 @@ namespace ShopBridge.Controllers
             return View(lstContact);
 
         }
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-    }
+       }
 }
